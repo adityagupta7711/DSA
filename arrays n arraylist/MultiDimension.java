@@ -1,9 +1,6 @@
-import java.util.Arrays;
-import java.util.Scanner;
 
-/**
- * MultiDimension
- */
+import java.util.*;
+
 
     public class MultiDimension {
     public static void main(String[] args) {
@@ -49,6 +46,6 @@ import java.util.Scanner;
         for(int[] a : arr) {
             System.out.println(Arrays.toString(a));
         }
-        
+        in.close();
     }
 }
