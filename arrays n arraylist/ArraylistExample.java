@@ -16,7 +16,7 @@ public class ArraylistExample {
 
 //        System.out.println(list.contains(765432));
 //        System.out.println(list);
-//        list.set(0, 99);
+//        list.set(0, 99);ko
 //
 //        list.remove(2);
 //
