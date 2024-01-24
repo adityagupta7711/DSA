@@ -45,5 +45,6 @@ public class input {
         str[1] = "kunal";
 
         System.out.println(Arrays.toString(str));
+        in.close();
     }
 }
