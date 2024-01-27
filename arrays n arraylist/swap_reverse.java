@@ -2,17 +2,17 @@ import java.util.*;
 public class swap_reverse {
     public static void main(String[] args) {
         int[] arr = {1, 3, 23, 9, 18, 56};
-       swap(arr, 0, 4);
+    //   swap(arr, 1, 3);
        reverse(arr); 
         System.out.println(Arrays.toString(arr));
     }
 
     static void reverse(int[] arr) { //reversal
         int start = 0;
-        int end = arr.length-1;
+        int end = arr.length-1; //index value
 
         while (start < end) {
-            // swap
+            // swap fn
             swap(arr, start, end);
             start++;
             end--;
