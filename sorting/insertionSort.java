@@ -6,7 +6,7 @@ package sorting;
 import java.util.*;
 public class insertionSort {
     public static void main(String[] args) {
-        int[] nums = {-21,43,-4,76,21,-23,0};
+        int[] nums = {-2, 8, 0, 4, 6, 8,-6};
         sort(nums);
         System.out.println(Arrays.toString(nums));
     }
