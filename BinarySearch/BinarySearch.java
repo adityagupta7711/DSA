@@ -13,7 +13,7 @@ public class BinarySearch {
         int start = 0;
         int end = arr.length - 1;
 
-        while(start <= end) {
+        while(start <= end) { 
             // find the middle element
            // int mid = (start + end) / 2; // might be possible that (start + end) exceeds the range of int in java, (s+e) might be a v big no.
             int mid = start + (end - start) / 2; // this formula won't exceed the int range
