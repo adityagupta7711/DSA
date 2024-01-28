@@ -1,9 +1,9 @@
 package BinarySearch;
-
+// when we don't know whether the array is sorted in ascending order or descending order
 public class orderAgnosticsBS {
     public static void main(String[] args) {
-        //        int[] arr = {-18, -12, -4, 0, 2, 3, 4, 15, 16, 18, 22, 45, 89};
-                int[] arr = {99, 80, 75, 22, 11, 10, 5, 2, -3};
+              int[] arr = {-18, -12, -4, 0, 2, 3, 4, 15, 16, 18, 22, 45, 89};
+            //    int[] arr = {99, 80, 75, 22, 11, 10, 5, 2, -3};
                 int target = 22;
                 int ans = orderAgnosticBS(arr, target);
                 System.out.println(ans);
@@ -14,6 +14,12 @@ public class orderAgnosticsBS {
                 int end = arr.length - 1;
         
                 // find whether the array is sorted in ascending or descending
+                // boolean isAsc;
+                // if (arr[start]< arr[end] ){
+                //     isAsc= true;
+                // } else {
+                //     isAsc= false;
+                // }  or simply write this
                 boolean isAsc = arr[start] < arr[end];
         
                 while(start <= end) {
@@ -21,7 +27,7 @@ public class orderAgnosticsBS {
         //            int mid = (start + end) / 2; // might be possible that (start + end) exceeds the range of int in java
                     int mid = start + (end - start) / 2;
         
-                    if (arr[mid] == target) {
+                    if (arr[mid] == target) { //case -if the target element is at the mid 
                         return mid;
                     }
         
@@ -31,7 +37,7 @@ public class orderAgnosticsBS {
                         } else {
                             start = mid + 1;
                         }
-                    } else {
+                    } else {                 
                         if (target > arr[mid]) {
                             end = mid - 1;
                         } else {
