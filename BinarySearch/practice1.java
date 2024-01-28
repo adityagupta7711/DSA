@@ -11,10 +11,11 @@ public class practice1 {
      * in letters.
      */
     public static void main(String[] args) {
-        char[] letters = { 'c', 'd', 'j', 'k', 'l' };
-        char target = 'f';
+        char[] letters = { 'c', 'd', 'j', 'k', 'z' };
+        char target = 'y';
         char ans = ceiling(letters, target);
         System.out.println(ans);
+        
     }
 
     static char ceiling(char[] letters, char target) {
@@ -29,6 +30,7 @@ public class practice1 {
                 start = mid + 1;
             }
         }
-        return letters[start % letters.length];
+            return letters[start % letters.length];
+            
     }
 }

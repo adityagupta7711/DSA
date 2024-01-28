@@ -20,6 +20,6 @@ public class SmallestLetter {
                 start = mid + 1;
             }
         }
-        return letters[start % letters.length];
+        return letters[start % letters.length]; //if (start == letters.length) return letters[0];
     }
 }
