@@ -2,39 +2,33 @@ package BinarySearch;
 
 import java.util.Arrays;
 
-/**
- * FirstAndLastPosition
- */
 public class FirstAndLastPosition {
 
     public static void main(String[] args) {
-        int[] nums= {2, 3, 4, 6, 6, 6, 8, 9};
-        int target= 5;
-        int[] ans= searchRange(nums, target);
+        int[] nums = { 1, 2, 3, 4, 6, 6, 6, 8, 9 };
+        int target = 6;
+        int[] ans = searchRange(nums, target);
         System.out.println(Arrays.toString(ans));
-
 
     }
 
-    static int[] searchRange(int[] nums, int target) {
+     static int[] searchRange(int[] nums, int target) {
 
-        int[] ans = {-1, -1};
+        int[] ans = { -1, -1 };
         // check for first occurrence if target first
-        ans[0] = search(nums, target, true);
+        ans[0] = search(nums, target, true);// int start= search(nums, target, true);
         if (ans[0] != -1) {
-            ans[1] = search(nums, target, false);
-        }
+            ans[1] = search(nums, target, false);// int end =search(nums, target, false);
+}                                                                //ans [0]= start; ans [1]= end
         return ans;
     }
 
-    // this function just returns the index value of target
-   static int search(int[] nums, int target, boolean findStartIndex) {
+      // this function just returns the index value of target
+     static int search(int[] nums, int target, boolean findStartIndex) {
         int ans = -1;
         int start = 0;
         int end = nums.length - 1;
-        while(start <= end) {
-            // find the middle element
-//            int mid = (start + end) / 2; // might be possible that (start + end) exceeds the range of int in java
+        while (start <= end) {
             int mid = start + (end - start) / 2;
 
             if (target < nums[mid]) {
@@ -54,4 +48,3 @@ public class FirstAndLastPosition {
         return ans;
     }
 }
-    
