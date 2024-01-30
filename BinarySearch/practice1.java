@@ -2,7 +2,7 @@ package BinarySearch;
 
 public class practice1 {
     /*
-     * LC 744
+     * LC Q.744---
      * You are given an array of characters letters that is sorted in non-decreasing
      * order, and a character target. There are at least two different characters in
      * letters.
@@ -11,8 +11,8 @@ public class practice1 {
      * in letters.
      */
     public static void main(String[] args) {
-        char[] letters = { 'c', 'd', 'j', 'k', 'z' };
-        char target = 'y';
+        char[] letters = { 'c', 'd', 'j', 'k', 'x' };
+        char target = 'a';
         char ans = ceiling(letters, target);
         System.out.println(ans);
         
@@ -26,11 +26,12 @@ public class practice1 {
 
             if (target < letters[mid]) {
                 end = mid - 1;
-            } else if (target > letters[mid]) {
+            } else {
                 start = mid + 1;
             }
         }
-            return letters[start % letters.length];
+        return letters[start% letters.length];
+        
             
     }
 }

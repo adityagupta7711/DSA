@@ -3,7 +3,7 @@ package BinarySearch;
 public class Floor {
     public static void main(String[] args) {
         int[] arr = {2, 3, 5, 9, 14, 16, 18};
-        int target = 0;
+        int target = 6;
         int ans = floor(arr, target);
         System.out.println(ans);
     }
@@ -14,8 +14,7 @@ public class Floor {
         int end = arr.length - 1;
 
         while(start <= end) {
-            // find the middle element
-//            int mid = (start + end) / 2; // might be possible that (start + end) exceeds the range of int in java
+            // find the middle element       
             int mid = start + (end - start) / 2;
 
             if (target < arr[mid]) {

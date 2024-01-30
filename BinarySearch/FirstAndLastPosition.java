@@ -1,15 +1,22 @@
 package BinarySearch;
 
+import java.util.Arrays;
+
 /**
  * FirstAndLastPosition
  */
 public class FirstAndLastPosition {
 
     public static void main(String[] args) {
+        int[] nums= {2, 3, 4, 6, 6, 6, 8, 9};
+        int target= 5;
+        int[] ans= searchRange(nums, target);
+        System.out.println(Arrays.toString(ans));
+
 
     }
 
-    public int[] searchRange(int[] nums, int target) {
+    static int[] searchRange(int[] nums, int target) {
 
         int[] ans = {-1, -1};
         // check for first occurrence if target first
@@ -21,7 +28,7 @@ public class FirstAndLastPosition {
     }
 
     // this function just returns the index value of target
-    int search(int[] nums, int target, boolean findStartIndex) {
+   static int search(int[] nums, int target, boolean findStartIndex) {
         int ans = -1;
         int start = 0;
         int end = nums.length - 1;
