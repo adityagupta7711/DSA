@@ -4,9 +4,7 @@ public class maxValueInArray {
      System.out.println(maxRange (arr, 1, 3));
         System.out.println(max(arr));
     }
-
-    
-     static int maxRange(int[] arr, int start, int end) {
+         static int maxRange(int[] arr, int start, int end) {
         // work on edge cases here, like array being null &
         // if (end > start) {
         //     return -1;
