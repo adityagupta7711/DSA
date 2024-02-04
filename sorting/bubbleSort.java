@@ -3,28 +3,35 @@ package sorting;
 import java.util.Arrays;
 
 public class bubbleSort {
-
     public static void main(String[] args) {
-        int[] nums = { -21, 43, -4, 76, 21, -23, 0 };
-        sort(nums, 0, nums.length - 1);
-        System.out.println(Arrays.toString(nums));
+        int[] arr = { 5, 4, 3, 2, 1 };
+        bubble(arr);
+        System.out.println(Arrays.toString(arr));
     }
 
-    static void sort(int[] arr, int s, int e) {
-        if (e == 0) {
-            return;
-        }
-        if (e > s) {
-            if (arr[s] > arr[s + 1]) {
-                // Swap
-                int temp = arr[s];
-                arr[s] = arr[s + 1];
-                arr[s + 1] = temp;
-            }
+    static void bubble(int[] arr) {
+        boolean swapped;
+        // run the steps n-1 times
+        for (int i = 0; i < arr.length; i++) {
+            swapped = false;
+            // for each step, max item will come ate the last respective index
+            for (int j = 1; j < arr.length - i; j++) {
+                // swap if the item is smaller than the previous item
+                if (arr[j] < arr[j - 1]) {
+                    // swap
+                    int temp = arr[j];
+                    arr[j] = arr[j - 1];
+                    arr[j - 1] = temp;
+                    swapped = true;
 
-            sort(arr, s + 1, e);
+                }
+            }
+            // if you didn't swap for a particular value of i, it means the array is sorted
+            if (swapped == false) {
+                break;
+
+            }
         }
-        sort(arr, 0, e - 1);
     }
 
 }
