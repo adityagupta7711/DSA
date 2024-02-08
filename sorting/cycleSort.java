@@ -2,7 +2,7 @@ package sorting;
 
 import java.util.Arrays;
 
-public class cycleSort {
+public class cycleSort { //the range [0, n] means cycle sort
     public static void main(String[] args) {
         int[]arr={4,3,2,1};
         sort(arr);

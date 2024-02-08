@@ -1,8 +1,4 @@
 package recursion;
-
-/**
- * fibonacci
- */
 public class fibonacci {
 public static void main(String[] args) {
     int ans= fibo(4);
