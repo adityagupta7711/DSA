@@ -9,6 +9,6 @@ public static void main(String[] args) {
         if (n<2){
             return n;
         }
-        return fibo(n-1)+ fibo(n-2);
+        return fibo(n-1)+ fibo(n-2); //not tail recursion
     }
 }

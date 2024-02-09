@@ -7,6 +7,17 @@ public class numbersExample {
         print1(1);
         
     }
+    static void print1(int n){
+        if (n==5){
+            System.out.println(5);
+            return;
+        }
+        System.out.println(n);
+        //this is called tail recursion
+        //this is the last function
+        print1(n+1);
+    }
+    }
 //     static void print1(int n){
 //         System.out.println(n);
 //         print2(2);
@@ -26,13 +37,5 @@ public class numbersExample {
 //     static void print5(int n){
 //         System.out.println(n);
 // }
-static void print1(int n){
-    if (n==5){
-        System.out.println(5);
-        return;
-    }
-    System.out.println(n);
-    print1(n+1);
-}
-}
+
 
