@@ -12,3 +12,4 @@ public class factorial {
       return  n * fact(n-1);
     }
 }
+//similarly you can do for sum
