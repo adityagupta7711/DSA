@@ -8,7 +8,6 @@ public class MissingNumber {
         int[] arr = {4, 0, 2, 1};
         System.out.println(missingNumber(arr));
     }
-
     public static int missingNumber(int[] arr) {
         int i = 0;
         while (i < arr.length) {
@@ -19,7 +18,7 @@ public class MissingNumber {
                 i++;
             }
         }
-
+ 
         // search for first missing number
         for (int index = 0; index < arr.length; index++) {
             if (arr[index] != index) {
