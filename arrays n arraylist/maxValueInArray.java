@@ -1,17 +1,18 @@
 public class maxValueInArray {
     public static void main(String[] args) {
-        int[] arr = {1, 3, 2, 9, 18};
-     System.out.println(maxRange (arr, 1, 3));
+        int[] arr = { 1, 3, 2, 9, 18 };
+        System.out.println(maxRange(arr, 1, 3));
         System.out.println(max(arr));
     }
-         static int maxRange(int[] arr, int start, int end) {
+
+    static int maxRange(int[] arr, int start, int end) {
         // work on edge cases here, like array being null &
         // if (end > start) {
-        //     return -1;
+        // return -1;
         // }
 
         // if (arr == null) {
-        //     return -1;
+        // return -1;
         // }
 
         int maxVal = arr[start];
@@ -21,10 +22,10 @@ public class maxValueInArray {
             }
         }
         return maxVal;
-    } 
-    
-    static int max (int[] arr) {
-        if (arr.length == 0) { //case if arr is empty
+    }
+
+    static int max(int[] arr) {
+        if (arr.length == 0) { // case if arr is empty
             return -1;
         }
         int maxVal = arr[0];

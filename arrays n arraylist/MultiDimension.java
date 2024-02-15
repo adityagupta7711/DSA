@@ -19,7 +19,7 @@ import java.util.*;
 //        };
 
         int[][] arr = new int[3][3];
-     //   System.out.println(arr.length); // no of rows
+    //    System.out.println(arr.length); // no of rows
         // input
 
         for (int row = 0; row < arr.length; row++) {
@@ -36,17 +36,16 @@ import java.util.*;
     //            System.out.print(arr[row][col] + " ");
     //        }
     //        System.out.println();
-    //    }
-
-    //     // output
-    //    for (int row = 0; row < arr.length; row++) {
-    //        System.out.println(Arrays.toString(arr[row]));
-    //    }
-        
+    //   }
+    
+    //      same output different way
+       for (int row = 0; row < arr.length; row++) {
+           System.out.println(Arrays.toString(arr[row]));
+       }
         // for each loop for the same fn
-        for(int[] a : arr) {
-            System.out.println(Arrays.toString(a));
-        }
+        // for(int[] a : arr) {
+        //     System.out.println(Arrays.toString(a));
+        // }
         in.close();
     }
 }

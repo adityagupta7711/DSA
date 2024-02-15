@@ -24,5 +24,3 @@ public class swap_reverse {
         arr[index2] = temp;
     }
 }
-    
-
