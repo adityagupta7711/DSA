@@ -1,3 +1,4 @@
+package LCprobs;
 import java.util.Arrays;
 
 public class lc {
