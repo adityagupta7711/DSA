@@ -1,6 +1,4 @@
 package BinarySearch;
-
-import java.util.Arrays;
 /*
  * LEETCODE 852. Peak Index in a Mountain Array
  */
