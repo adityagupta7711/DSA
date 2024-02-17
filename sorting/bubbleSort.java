@@ -1,7 +1,5 @@
 package sorting;
-
 import java.util.Arrays;
-
 public class bubbleSort {
     public static void main(String[] args) {
         int[] arr = { 1, 2, 3, 4, 5 };
@@ -23,7 +21,6 @@ public class bubbleSort {
                     arr[j] = arr[j - 1];
                     arr[j - 1] = temp;
                     swapped = true;
-
                 }
             }
             // if you didn't swap for a particular value of i, it means the array is sorted
@@ -33,5 +30,4 @@ public class bubbleSort {
             }
         }
     }
-
 }

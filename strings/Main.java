@@ -2,10 +2,12 @@ package strings;
 
 public class Main {
     public static void main(String[] args) {
-        int[] arr = {2, 3, 5, 4, 19};
         int num = 10;
+        System.out.println(num);
+        num = 5;
+        System.out.println(num);
         String name = "Kunal Kushwaha";
-//        System.out.println(name);
+        System.out.println(name);
 
         String a = "Kunal";
         System.out.println(a);
