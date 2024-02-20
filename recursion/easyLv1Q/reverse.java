@@ -1,4 +1,4 @@
-package recursion;
+package recursion.easyLv1Q;
 
 public class reverse {
     static int sum = 0;
@@ -13,7 +13,7 @@ public class reverse {
     }
 
     static void rev2(int n){
-        
+
     }
 
     public static void main(String[] args) {
