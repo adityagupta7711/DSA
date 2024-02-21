@@ -1,0 +1,30 @@
+Character.isAlphabetic(ch)	// To check if it's alphabet or not
+Character.isDigit(ch)
+
+str.substring(1)			// Send copy of string but from index 1
+
+(Arrays.copyOfRange(arr , 0 , mid));    // this will send copy of arr from 0 to mid-1
+
+
+String s = "a1b2";
+char ch = s.charAt(3);		// here we get char '2'
+int num = ch - '0';			// to convert the char at index 3 into int we use this 
+char c = (char) ('a' + num);	// This will add int num to a which results in c
+
+
+
+char[] arr = {'a', 'b', 'c', 'd', 'e'};
+String str = new String(arr); 		// To convert character aray into string
+
+
+
+s = s.replaceAll("[^a-zA-Z0-9]", "").toLowerCase();
+// The Regex [^a-zA-Z0-9] will delete (replace by "") any characters different from A to Z and 0 till 9
+
+
+
+String str= "Welcome   to 420 Gang ";
+String [] Str= str.trim().split("\\s+");	// .trim() will remove spaces from first and last 
+System.out.println(Arrays.toString(Str));        
+"\\s": This represents a whitespace character in regular expressions. It includes spaces, tabs, and newline characters.
++: This is a quantifier in regular expressions that means "one or more occurrences of the preceding element". So \\s+ means one or more whitespace characters.
