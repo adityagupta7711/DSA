@@ -15,8 +15,8 @@ public class MergeSort {
 
         }
         int mid= arr.length/2;
-        int[] left = mergeSort(Arrays.copyOfRange(arr, 0, mid));//new arr being created and passed in rec calls
-        int [] right= mergeSort(Arrays.copyOfRange(arr, mid, arr.length));
+        int[] left = mergeSort(Arrays.copyOfRange(arr, 0, mid));// creating new objects for every functon call
+        int [] right= mergeSort(Arrays.copyOfRange(arr, mid, arr.length));//new arr being created and passed in rec calls
     return merge( left, right);
     }
     private static int[] merge(int[] first, int[] second) {
