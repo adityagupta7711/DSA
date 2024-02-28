@@ -11,6 +11,7 @@ public class findTarget {
         // System.out.println(findIndexLast(arr, 4, arr.length-1));
         // findAllIndex(arr, 4, 0);
         // System.out.println(list);
+        // ArrayList<Integer> list= new ArrayList<>(); can declare it here as well or do it like below
         ArrayList<Integer> ans= findAllIndex(arr, 4, 0, new ArrayList<>());
         System.out.println(ans);
     }
@@ -40,7 +41,7 @@ public class findTarget {
         else{
             return findIndexLast(arr, target, index-1);} 
     }
-    
+    // 1 way
     static ArrayList<Integer> list= new ArrayList<>();
     static void findAllIndex(int [] arr, int target, int index){
         if (index== arr.length) {
@@ -51,6 +52,7 @@ public class findTarget {
         } 
         findAllIndex(arr, target, index+1);
     }
+    //2nd way in the argument
     static ArrayList<Integer> findAllIndex(int [] arr, int target, int index, ArrayList<Integer> list){
         if (index==arr.length) {
             return list;
@@ -60,4 +62,21 @@ public class findTarget {
         }
         return findAllIndex(arr, target, index+1, list);
     }
+
+    static ArrayList<Integer> findAllIndex2(int[] arr, int target, int index){
+        ArrayList<Integer> list= new ArrayList<>(); // creates new list for every fn call
+        if (index == arr.length) {
+            return list;
+        }
+
+        // this will contain answer for that function call only
+        if (arr[index]== target) {
+            list.add(index);
+
+        }
+        ArrayList<Integer> ansFromBelowCalls= findAllIndex2(arr, target, index+ 1);
+        list.addAll(ansFromBelowCalls);
+        return list;
+    }
+
 }
