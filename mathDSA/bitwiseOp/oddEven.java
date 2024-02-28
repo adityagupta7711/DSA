@@ -1,4 +1,4 @@
-package mathDSA;
+package mathDSA.bitwiseOp;
 
 public class oddEven {
     public static void main(String[] args) {
