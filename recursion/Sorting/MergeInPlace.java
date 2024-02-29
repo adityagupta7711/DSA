@@ -11,7 +11,7 @@ public class MergeInPlace {
         System.out.println(Arrays.toString(arr));
     }
 
-    
+    //new arrays are not made, the original arr is modified with the help of pointers- s,m,e
     static void mergeSortInPlace(int[] arr, int s, int e) {
         if (e - s==1) {
             return;
