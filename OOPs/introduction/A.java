@@ -1,5 +1,5 @@
 package OOPs.introduction;
 
-public class intro {
-    
+public class A {
+
 }
