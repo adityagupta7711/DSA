@@ -26,9 +26,9 @@ public class input {
 //        for (int i = 0; i < arr.length; i++) {
 //            System.out.print(arr[i] + " ");
 //        }
-          // enhanced for loop-- for every element in array, print the element
+          // enhanced for loop-- for each element in array, print the element
           
-//        for(int num : arr) { // for every element in array, print the element
+//        for(int num : arr) { // for each element in array, print the element
 //            System.out.print(num + " "); //  here num represents element of the array
 //        }
 
