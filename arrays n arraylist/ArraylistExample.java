@@ -17,7 +17,7 @@ public class ArrayListExample {
        list.set(0, 99);   // list me zeroth index changed to 99
 
        list.remove(2);    // index no.2 - 654 removed
-
+       
        System.out.println(list);
 
         // input

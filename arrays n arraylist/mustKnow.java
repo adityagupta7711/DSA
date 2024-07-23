@@ -7,6 +7,7 @@ public class mustKnow {
         List<String> list= Arrays.asList(arr);
         for (String s : list) {
             System.out.print(s + "_");
+            System.out.println();
         }
 
         int[] array= new int[5];
