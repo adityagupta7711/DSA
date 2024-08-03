@@ -1,8 +1,10 @@
 package sorting;
+
 import java.util.Arrays;
+
 public class bubbleSort {
     public static void main(String[] args) {
-        int[] arr = { 1, 2, 3, 4, 5 };
+        int[] arr = { 1, 4, 3, 2, 5 };  //1,2,3,4,5
         bubble(arr);
         System.out.println(Arrays.toString(arr));
     }
@@ -24,7 +26,7 @@ public class bubbleSort {
                 }
             }
             // if you didn't swap for a particular value of i, it means the array is sorted
-            if (swapped == false) {
+            if (swapped == false) { // or can write (!swapped) ---> (!false == true)
                 break;
 
             }

@@ -22,7 +22,7 @@ public class LL {
     public void display(){
         Node temp = head;
         while (temp != null){
-            System.out.println(temp.value + "->");
+            System.out.print(temp.value + "->");
             temp= temp.next;
         }
         System.out.println("END");
@@ -73,5 +73,40 @@ public class LL {
         }
 
     }
+//----------Questions--------------------------------------------------
+    public void deleteDuplicates(){
+        Node node = head;   //we'll start from head 
+        
+        while (node.next != null) {
+            if (node.value == node.next.value) {
+                node.next = node.next.next;
+                size--;
+            }
+            else {
+                node = node.next;
+            }
+        }
+
+        tail= node;
+        tail.next= null; 
+    }
+
+    public static void main(String[] args) {
+        LL list = new LL();
+        list.insertLast(1);
+        list.insertLast(1);
+        list.insertLast(2);
+        list.insertLast(2);
+        list.insertLast(3);
+        list.insertLast(3);
+        list.insertLast(3);
+        list.display();
+        list.deleteDuplicates();
+        list.display();
+
+    }
+
+
+
 
 }
