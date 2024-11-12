@@ -7,6 +7,5 @@ public class NoOfDigits {
     int b= 2;
     int ans = (int)(Math.log(n)/Math.log(b)) +1;
     System.out.println(ans);
-    }   
-
+    }
 }

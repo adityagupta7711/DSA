@@ -21,6 +21,6 @@ public class palindrome {
     }
 
     public static void main(String[] args) {
-        System.out.println(palin(1));
+        System.out.println(palin(131));
     }
 }

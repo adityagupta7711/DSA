@@ -17,6 +17,8 @@ public static void main(String[] args) {
         list.insertLast(99);
         list.insert(100, 3);
         list.display();
+        list.insertRec(88, 2);
+        list.display();
 //         System.out.println(list.deleteFirst());
 //         list.display();
 //         System.out.println(list.deleteLast());
@@ -39,14 +41,7 @@ public static void main(String[] args) {
 //
 //        list.display();
 
-//        CLL list = new CLL();
-//        list.insert(23);
-//        list.insert(3);
-//        list.insert(19);
-//        list.insert(75);
-//        list.display();
-//        list.delete(19);
-//        list.display();
+//    
 // }
 
 

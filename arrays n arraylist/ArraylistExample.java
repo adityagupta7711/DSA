@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.Scanner;
 
 public class ArrayListExample {
@@ -11,6 +12,20 @@ public class ArrayListExample {
        list.add(234);
        list.add(654);
        list.add(43);
+       list.add(10);
+       list.add(20);
+       list.add(30);
+
+       for (int i = 0; i < list.size(); i++) {
+            System.out.println("the element is-- "+ list.get(i)); 
+       }
+       for (Integer element : list) {
+        System.out.println("for each element is "+ element);
+       }
+       Iterator<Integer> it = list.iterator();
+       while (it.hasNext()) {
+        System.out.println("iterator "+ it.next());
+       }
 
        System.out.println(list.contains(765432));
        System.out.println(list);
@@ -33,6 +48,7 @@ public class ArrayListExample {
         System.out.println(list);
 
         in.close();
+
 
     }
 }
